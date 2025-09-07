@@ -71,3 +71,16 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+
+sudo apt update
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node --version
+npm --version
+git clone https://github.com/Anoop509/techradiator-hub.git
+cd techradiator-hub/
+npm install
+npm run build
+sudo rm -rf /var/www/html/*
+sudo cp -r ~/techradiator-hub/dist/* /var/www/html/
